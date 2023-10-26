@@ -1,0 +1,57 @@
+.home{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    height:100vh;
+    background-color: #dcb2b0;
+
+    .main {
+        .home-header{
+            text-align:center;
+
+            .connection-form {
+                background: $color-4;
+                border-radius: 20px;
+                padding: 25px;
+
+                ul {
+                    display: flex;
+                    justify-content: center;
+                    margin-bottom: 18px;
+
+                    li {
+                        cursor: pointer;
+                        border-radius: 20px;
+                        padding: 12px 14px;
+                        transition: .2s;
+                        margin: 0 8px;
+                        background-color: #f9a8a6;
+                        font-weight: bold;
+                      }
+                }
+                #sign-up-form {
+                    
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+
+                    input[type=text] {
+                        padding:6px;
+                    }
+                    input[type=password] {
+                        padding:6px;
+                    }
+                    input[type=submit] {
+                        background-color: #ff7b77;
+                        font-weight: bold;
+                        color:black;
+                    }
+                    label {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+}

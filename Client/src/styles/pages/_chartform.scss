@@ -1,0 +1,33 @@
+#Chart-form {
+    background-color: #fdeeee;
+    border-radius: 20px;
+    padding:35px;
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+#Sex {
+    padding:10px;
+}
+#Age {
+    padding:10px;
+}
+#Pclass {
+    padding:10px;
+}
+
+canvas{
+    width:540px;
+    height:300px;
+}
+
+.Reinitialiser{
+    margin-top:20px;
+    background-color: blue;
+    color:white;
+    border-radius: 10px;
+
+    &:hover{
+        background-color: green;
+    }
+}
