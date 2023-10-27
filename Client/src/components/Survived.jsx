@@ -19,7 +19,7 @@ const Survived = () => {
     }, []);
 
     return (
-        <div style={{ position: 'absolute', top: 100, left: 0 }}>
+        <div className='Survived'>
             <h3>Survivants</h3>
             <p>Nombre de survivants : {survivors}</p>
         </div>

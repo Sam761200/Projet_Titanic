@@ -39,7 +39,7 @@ const Graphique = ( {Data, Sex, Age, Pclass} ) => {
     }
     
 
-console.log(Sex, Pclass, Age)
+    console.log(Sex, Pclass, Age)
         useEffect(() => {
 
             const dataGraphAge = {

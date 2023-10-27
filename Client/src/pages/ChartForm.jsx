@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Graphique from '../components/Graphique';
 import Statistics from '../components/Statistics';
 import Survived from '../components/Survived';
+import Logout from "../components/Log/logout"
 
 const ChartForm = () => {
 
@@ -29,8 +30,8 @@ const ChartForm = () => {
     })
        .then((res) => {
          setData(res.data)
-         console.log(Data)
          setGraphique(true)
+         console.log(Data)
       })
        .catch((err) => {
          console.log(err);
@@ -48,7 +49,7 @@ const ChartForm = () => {
 
     return (
       <>
-
+      <Logout />
       <Statistics />
       <Survived />
 

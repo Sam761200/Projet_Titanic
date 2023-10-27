@@ -35,7 +35,7 @@ const Statistics = () => {
     const stdDev = calculateStandardDeviation(ages, mean);
 
     return (
-        <div style={{ position: 'absolute', top: 0, left: 0 }}>
+        <div className="Statistics">
             <h3>Statistiques</h3>
             <p>Moyenne de l'âge : {mean.toFixed(2)}</p>
             <p>Écart type de l'âge : {stdDev.toFixed(2)}</p>

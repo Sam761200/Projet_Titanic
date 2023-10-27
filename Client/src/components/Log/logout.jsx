@@ -12,7 +12,7 @@ const Logout = () => {
   const logout = async () => {
     await axios({
       method: "get",
-      url: `${process.env.REACT_APP_API_URL}api/user/logout`,
+      url: `${import.meta.env.VITE_REACT_APP_API_URL}api/user/logout`,
       withCredentials: true,
     })
       .then(() => removeCookie("jwt"))
@@ -23,7 +23,7 @@ const Logout = () => {
 
   return (
     <li onClick={logout}>
-      <img src="./img/icons/logout.svg" alt="logout" />
+      <img src="../../../public/logout.svg" alt="logout" className="logout" />
     </li>
   );
 };
